@@ -1,0 +1,173 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+   background-color: rgb(193, 169, 121);
+   color: aliceblue;
+   padding: 10px;
+   width: auto;
+   box-shadow: 6px 6px rgb(61, 59, 59);
+}
+
+.box:hover{
+  background-color: rgb(52, 52, 54);
+  border: 5px red solid;
+  /* transform: scale(1.2); */
+}
+
+.bawah{
+  margin: 10px;
+  width: 100px;
+}
+
+body{
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(203, 195, 195); */
+  background-image: url(bg-luar\ angkasa.jpg);
+  background-size: cover;
+}
+
+.input {
+  background-color: #383838;
+  border: 1ex solid none;
+  border-top-width: 1.7em;
+  margin: 0;
+  padding: 0;
+  color: #383838;
+  word-wrap: break-word;
+  outline: 7px solid #383838;
+  height: 30px;
+  font-size: 17px;
+  text-align: center;
+  transition: all 1s;
+  max-width: 190px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .input:hover {
+  border-top-width: 0.2em;
+  background-color: #f1e8e8;
+ }
+ 
+ .input:focus {
+  border-top-width: 0.2em;
+  background-color: #f1e8e8;
+ }
+
+ button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+
+/* dclsnclksc */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #0e0d0d;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+
+@media (max-width: 768px){
+  .container{
+    width: 90%;
+
+  }
+  .box{
+    width: 90%;
+  }
+  body{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
